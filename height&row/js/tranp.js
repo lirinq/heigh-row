@@ -32,21 +32,29 @@ for (let i = 0; i < 2; i++) {
 //一枚目だけ表表示
 deck1.flip(0,element,true);
 
+// judgeH.addEventListener("click", function () {
+//     if (fildCard[0].number < fildCard[1].number) {
+
+//         console.log("正解");
+//     } else if(fildCard[1].number < fildCard[0].number) {
+//         console.log("不正解");
+//     } else if(fildCard[0].number === fildCard[1].number){
+//         console.log("ひきわけ");
+//     }
+// });
+
+console.log();
 judgeH.addEventListener("click", function () {
-    if (fildCard[0].number < fildCard[1].number) {
+  switch(fild[0].number){
 
-        console.log("正解");
-    } else if(fildCard[1].number < fildCard[0].number) {
-        console.log("不正解");
-    } else if(fildCard[0].number === fildCard[1].number){
-        console.log("ひきわけ");
-    }
-});
+        case fild[1].number > fild[0]:
+        fild[0].flip(0,element,true);
+        break;
 
-switch(case1){
-        case"":
+        case fild[0].number > fild[1]:
+        
         break;
     }
-
+});
 console.log(fild[0].number);
 console.log(fild[1].number);
