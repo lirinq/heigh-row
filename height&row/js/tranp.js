@@ -24,7 +24,6 @@ let fildCard = {};
 for (let i = 0; i < 2; i++) {
   fild.push(deck1.deck[i]);
   element[i].setAttribute("src", fild[i].src);
-  fildCard[i] = fild[i];
   fild[0].isOpen = true;
   console.log(fild[i].isOpen);
 }
@@ -44,7 +43,8 @@ judgeH.addEventListener("click", function () {
 });
 
 console.log();
-// judgeH.addEventListener("click", function () {
+
+//judgeH.addEventListener("click", function () {
 //   switch(fild[0].number){
 
 //         case fild[1].number > fild[0]:
